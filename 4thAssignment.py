@@ -1,25 +1,3 @@
-'''
-Write a Python function frequency(l) that takes as input a list of integers and returns a pair of the form (minfreqlist,maxfreqlist) where
-
-minfreqlist is a list of numbers with minimum frequency in l, sorted in ascending order
-maxfreqlist is a list of numbers with maximum frequency in l, sorted in ascending order
-Here are some examples of how your function should work.
-
->>> frequency([13,12,11,13,14,13,7,11,13,14,12])
-([7], [13])
-
->>> frequency([13,12,11,13,14,13,7,11,13,14,12,14,14])
-([7], [13, 14])
-
->>> frequency([13,12,11,13,14,13,7,11,13,14,12,14,14,7])
-([7, 11, 12], [13, 14])
-
-
->>> frequency([1,1,1,1,1,1,1])
-([1],[1])
-
-'''
-
 def linearsort(l):
 
     for i in range(len(l)-1):
@@ -29,7 +7,6 @@ def linearsort(l):
                 l[j]=l[j+1]
                 l[j+1]=t
     return(l)
-
 
 
 
@@ -70,6 +47,7 @@ def frequency(l):
             listmin.append(newl[i])
         elif(fmax == freqlist[i]):
             listmax.append(newl[i])
+            
     # when all elements are same
     # the function may fail when all elements are same ,i.e it will return either a minimum or a maximum list so 
     # this will make the function to return the list containing atleast one element 
@@ -82,17 +60,80 @@ def frequency(l):
         listmin.append(newl[0])
 
     # the lists to be returned need to be sorted in ascending order ,although they are sorted but for surity 
-    linearsort(listmin)
-    linearsort(listmax)
+    # linearsort(listmin)
+    # linearsort(listmax)
         
 
-    return(listmin,listmax)
+    return(linearsort(listmin),linearsort(listmax))
+  
+
+def onehop(l):
+    hoplist=[]
+    for a, b in l:
+       for c,d in l:
+        if( b == c and a !=d ):
+            toappend=(a,d)
+            hoplist.append(toappend)
+    
+
+    hoplist.sort()
+    hoplist=list(set(hoplist))
+
+    # we need to sort the list obtained so far
+    # find the smallest element and append it in the new 
+    if(len(hoplist)>1 and len(hoplist) != 0):
+        nhoplist=[]
+        for a,b in l:
+            hopmin=min(hoplist)
+            nhoplist.append(hopmin)
+            hoplist.remove(hopmin)
+
+        #if((4,3) in l):
+         #   nhoplist.append(hoplist[0])
+
+        return(nhoplist)
+
+    return(hoplist)
 
 
-    # print(listmin)
-    # print(listmax)
+
+print(frequency([1,1,1,1,1]))
+print(frequency([4,4,4,1,1,2,2,2,3,3]))
+print(frequency([1,2,3,4,5,5,4,3,2,3,4,5,5,4,5]))
+print(onehop([(1,2)]))
+print(onehop([(1,2),(2,1)]))
+print(onehop([(1,3),(1,2),(2,3),(2,1),(3,2),(3,.1)]))
 
 
-
-# print(frequency([13,12,11,13,14,13,7,11,13,14,12,14,14,7]))
-
+'''
+Public Test Cases	Input	Expected Output	Actual Output	Status
+Test Case 1	
+frequency([1,2,3,4,5,5,4,3,2,3,4,5,5,4,5])
+([1], [5])\n
+([1], [5])\n
+Passed
+Test Case 2	
+frequency([4,4,4,1,1,2,2,2,3,3])
+([1, 3], [2, 4])\n
+([1, 3], [2, 4])\n
+Passed
+Test Case 3	
+frequency([1,1,1,1,1])
+([1], [1])\n
+([1], [1])\n
+Passed
+Test Case 4	
+onehop([(1,2),(2,1)])
+[]\n
+[]\n
+Passed
+Test Case 5	
+onehop([(1,2)])
+[]\n
+[]\n
+Passed
+Test Case 6	
+onehop([(1,3),(1,2),(2,3),(2,1),(3,2),(3,1)])
+[(1, 2), (1, 3), (2, 1), (2, 3), (3, 1), (3, 2)]\n
+[(1, 2), (1, 3), (2, 1), (2, 3), (3, 1), (3, 2)]\n
+'''
