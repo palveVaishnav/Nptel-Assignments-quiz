@@ -1,0 +1,48 @@
+Programming, Data Structures And Algorithms Using Python : Online Programming test
+2022-07-27
+
+Dear Learners,
+
+The criteria for certification of this course "Programming, Data Structures And Algorithms Using Python" is different because of the online programming exam component. 
+
+Please read the following carefully.
+
+Final score = 25% of Assignment score + 50% of Online exam score (Proctored) + 25% of Programming exam (Unproctored)
+
+    - Unproctored means, candidates will be taking the exam from college/home without NPTEL team present for monitoring the test- with access to all resources.
+    - The discussion forum will be disabled during the exam duration (during both sessions) and re-enabled thereafter. 
+
+How to take the online programming test
+
+    1. Go to: https://onlinecourses.nptel.ac.in/noc22_cs70/
+    2. Log in using the same email id which you have been accessing the course (i.e. using to watch videos & submit Assignments)
+    3. There will be sections under the course outline "Online Programming Test (September 18)"  that will have the online programming exam link.  
+    4. You can click on this link and attempt the programming exam.
+
+Date: September 18, 2022 (Sunday) (Duration of the session will be 2 hrs)
+First Session: 10.00AM - 12.00PM 
+Second Session: 8.00PM - 10.00PM
+
+Note:
+    - You can take the exam from your college or home.
+    - The exam has to be taken in pc or laptop. DO NOT TRY TO TAKE THE EXAM USING YOUR MOBILE PHONE.
+    - The discussion forum will be disabled during the exam duration (during both sessions) and re-enabled thereafter. 
+    - If you encounter any issues during the exam, please write to noc22-cs70@nptel.iitm.ac.in
+
+IMPORTANT: CERTIFICATION CRITERIA
+
+Candidates have to come to the exam center and take the theory test on September 25, 2022
+It is mandatory to take the Proctored in-person final exam to obtain a certificate.
+To pass the course and get a certificate:
+
+    Assignment score >= 40/100 AND Programming exam score >= 40/100 AND Proctored exam score >= 40/100
+
+        OR
+
+    Assignment score >= 10/25 AND Programming exam score >= 10/25 AND Proctored exam score >= 20/50  
+
+
+All 3 conditions have to be satisfied.
+All the best to the candidates!
+
+-NPTEL Team.
