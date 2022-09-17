@@ -98,7 +98,109 @@ def mypalindrome(l):
         	l == l[::-1]
     )
 
+'''
+Question 5
+A positive integer n is said to be perfect if the sum of the factors of n, other than n itself,
+add up to n. For instance 6 is perfect since the factors of 6 are {1,2,3,6} and 1+2+3=6.
+Likewise, 28 is perfect because the factors of 28 are {1,2,4,7,14,28} and 1+2+4+7+14=28.
+'''
+#answer:
 
+def factors(n):
+    f=[]
+    for i in range(1,n-1):
+        if(n%i==0):
+            f.append(i)
+    
+    return(f)
+
+def sum(f):
+    x=0
+    for i in range(len(f)):
+        x=x+f[i]
+
+    return(x)
+#main function
+def perfect(n):
+  #find all factors accept the number itself
+    l=factors(n)
+    #find the sum of factors
+    s=sum(l)
+    #compare and return
+    if(n==s):
+        return (True)
+    else:
+        return(False)
+#exampes:
+print(perfect(6))
+print(perfect(28))
+print(perfect(12))
+
+'''
+Question 6
+Write a Python function sublist(l1,l2) that takes two sorted lists as arguments and returns True if the the first list is a sublist of the second list,
+and returns False otherwise.
+A sublist of a list is a segment consisting of contiguous values, without a gap. Thus, [2,3,4] is a sublist of [2,2,3,4,5], but [2,2,4] and [2,4,5] are not.
+'''
+#error
+
+def sublist(a,b):
+    if(len(a)==0):
+        return (True)
+    c=0
+    chk=0
+    for i in range(len(b)):
+        if(a[c]==b[i]):
+            m=i
+            for j in range (len(a)):
+                if(a[j] != b[m]):
+                    chk+=1
+                m+=1
+        if(chk==0):
+            return(True)
+        else:
+            break
+                
+    return(False)
+#examples:
+sublist([2,2,4],[2,2,3,4,5])  #false
+sublist([2,2,3],[2,2,3,4,5])  #true
+
+'''
+Question 7
+Write a Python program that reads input from the keyboard (standard input). The input will consist of some number of lines of text. The input will be terminated by a blank line. Your program should print every third line.
+
+For instance, if the input is the following:
+
+"Spot the mistake
+in the following argument",
+Jack challenged
+1+(-1+1)+(-1+1)+... = (1+ -1)+(1+ -1)+...
+so therefore,
+1 = 0
+??
+
+then the output should be:
+
+Jack challenged
+1 = 0
+'''
+
+
+
+
+
+
+
+
+
+'''
+Question 8
+Write a Python function repeated(l) that takes a list of immutable values as argument. 
+The function should return the number of values that are repeated in the input list.
+For instance, repeated([1,17,22,17,23,17]) should return 1 because only 1 value, 17 is repeated. 
+Likewise repeated(["the","higher","you","climb","the","further","you","fall"]) is 2 becaues 2 values, "the" and "you", are repeated.
+'''
 
 
 
