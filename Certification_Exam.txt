@@ -46,3 +46,38 @@ All 3 conditions have to be satisfied.
 All the best to the candidates!
 
 -NPTEL Team.
+
+///// MARKING SCHEME.
+
+Programming, Data Structures And Algorithms Using Python - Evaluation details
+2022-09-12
+
+Dear Learner,
+
+Here are more details about the different components of the evaluation for this course: Internal assessment (25%), Online programming test (25%) and Proctored exam (50%).
+
+Quizzes/Programming Assignments
+
+There will be 5 quizzes and 5 programming assignments which together make up the 25% for internal assessment.
+
+- 12.5% of the total marks will be for the best 3 quizzes.
+- 12.5% of the total marks will be for the best 3 programming assignments.
+
+Online Programming Exam:
+
+The platform used for the certification exam does not support programming in Python. Hence, the final written exam will be a theory exam, like the quizzes. To test your programming skills, there will be an online programming test on Sunday, Sep 18, 2022, with 25% weightage.
+
+As announced, the online programming exam will take place through the course webpage, https://onlinecourses.nptel.ac.in/noc22_cs70/. There is no separate registration for this online test. You can log in to the course portal as usual and the test will appear on the left menu, like other lessons, assignments and quizzes. There is no fee for this test.
+
+You can attempt this test even if you are not taking the certification exam. If you are taking the certification exam, you must take this test because it counts for 25% of the final evaluation. The test will run in two sessions. Each session will be for 2 hours. The two sessions are Sunday, Sep 18, 2022, 10 am -12 pm and Sunday, Sep 18, 2022, 8:00 pm - 10:00 pm.
+
+You can attempt either session, independent of which written exam session you are registered for. If you write both online tests, you will be awarded the best score amongst the two sessions. The test will include questions where you have to write Python code as well as questions involving reading and understanding Python code.
+
+Proctored exam:
+
+There will be 40 questions. The questions will be a mix of multiple choice and fill in the blanks, like the quizzes during the course. The pattern will be similar to the course quizzes. You will not have access to the Python interpreter during this exam.
+
+All the Best !!
+
+Thanks & Regards,
+-NPTEL Team
