@@ -18,3 +18,12 @@ squarefree(125)  #false
 squarefree(57768232)  #false
 squarefree(101)     #true
 squarefree(1001)    #true
+'''
+#Alternate solution
+import math
+def squarefree(n):
+  for i in range(2,1+math.ceil(math.sqrt(n))):
+    if n%(i*i) == 0:
+      return(False)
+  return(True)
+  '''
