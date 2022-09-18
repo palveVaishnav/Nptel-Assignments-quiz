@@ -25,3 +25,20 @@ thirdmax([10,1,8,2,0])
 thirdmax([10,20,30,40]) 
           
 
+#ALTERNATE SOLUTION
+'''
+def thirdmax(l):
+  (mymax,mysecondmax,mythirdmax) = (0,0,0)
+  for i in range(len(l)):
+  # Your code below this line
+
+    if l[i] > mymax:
+      (mymax,mysecondmax,mythirdmax) = (l[i],mymax,mysecondmax)
+    elif l[i] > mysecondmax:
+      (mysecondmax,mythirdmax) = (l[i],mysecondmax)
+    elif l[i] > mythirdmax:
+      mythirdmax = l[i]
+
+  # Your code above this line
+  return(mythirdmax)
+  '''
